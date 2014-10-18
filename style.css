@@ -8,13 +8,40 @@ License: GPL
 */
 @import url('bootstrap/css/bootstrap.css');
 @import url('bootstrap/css/bootstrap-responsive.css');
+@font-face {
+    font-family: Cantarell;
+    src: url('bootstrap/fonts/Cantarell-Regular.ttf');
+}
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 div {
-	padding: 2px;
+	padding: 3px;
+}
+a img {
+    transition: opacity 0.2s ease 0s;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.post-thumbnail {
+	max-height: 170px;
+	max-width: 360px;
+	margin: auto;
+}
+.post-thumbnail:hover { opacity: 0.75; }
+ a:hover {
+	color: black;
+	text-decoration: none;
+}
+body, head {
+	font-family: Cantarell;
+}
+body {
+	font-size: 16px;
 }

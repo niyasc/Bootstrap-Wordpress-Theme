@@ -8,14 +8,25 @@
 					<div class="row container" style="tbl table-bordered">
 						<div class="row">
 							<?php get_template_part( 'thumbnailformat' ); ?>
-							<?php the_post()?>
-							<?php get_template_part( 'thumbnailformat' ); ?>
+							<?php 
+								
+								if (more_posts()) {
+									the_post();
+									get_template_part( 'thumbnailformat' );
+								}
+							?>
+							
 						</div>
 					</div>
-	    
     			<hr>
     			
-				<?php endwhile; else: ?>
+				<?php endwhile; ?>
+				<div class="pager">
+  					<li><?php next_posts_link( 'Next Page' ); ?></li>
+  					<li><?php previous_posts_link(' Previous Page'); ?></li>
+				</div>
+				
+				<?php else: ?>
 					<p><?php _e('Sorry, this page does not exist'); ?></p>
 				<?php endif; ?>
 	</div>
@@ -28,5 +39,4 @@
 		<?php get_sidebar('2');?>
 	</div>
 </div>
-
 <?php get_footer(); ?>

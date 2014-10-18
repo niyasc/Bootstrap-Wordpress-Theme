@@ -1,0 +1,20 @@
+/*
+Theme Name : TechnoRevolution3 
+Description : A responsive them using bootstrap 3.2 based on tutorial given in teamtreehouse.com
+Author : Niyas C
+Version 1.0
+Tags: responsive, bootstrap3.2
+License: GPL
+*/
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+div {
+	padding: 2px;
+}

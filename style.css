@@ -45,3 +45,74 @@ body, head {
 body {
 	font-size: 16px;
 }
+.main-title {
+	text-align: center;
+}
+.main-img {
+	max-height: 340px;
+	max-width: 720px;
+	width: 100%;
+}
+/*.item {
+	text-align: center;
+	max-height: 340px !important;
+	width: 100%;
+}
+#carousel-example-generic{
+	background-color: #333;
+}
+*/
+/*
+Special thanks to http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php for this section
+*/
+/*h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}*/
+
+.section-title {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+.item{
+    background: black;    
+    text-align: center;
+    width: 100%;
+    max-height: 340px;
+}
+.carousel{
+    margin-top: 20px;
+    background-color: black;
+}
+
+.carousel-inner img:hover {
+	opacity: 0.75;
+}
+.carousel-caption h3 {
+	background-color: #362B2B;
+	padding: 2px;
+	border-radius: 2px;
+	width: 100%;
+    transition: opacity 0.2s ease 0s;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.carousel-caption h3:hover {
+	color: #428BCA;
+}
+
+.carousel-caption .caption {
+	text-outline: 4px 4px black;
+	padding: 2px;
+	border-radius: 2px;
+	width: 100%;
+}
+.latest-post-container {
+	border: 1px solid #ccc;
+}

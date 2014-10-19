@@ -22,8 +22,8 @@
     			
 				<?php endwhile; ?>
 				<div class="pager">
-  					<li><?php next_posts_link( 'Next Page' ); ?></li>
   					<li><?php previous_posts_link(' Previous Page'); ?></li>
+  					<li><?php next_posts_link( 'Next Page' ); ?></li>
 				</div>
 				
 				<?php else: ?>
@@ -32,11 +32,8 @@
 	</div>
 	
 	
-	<div class="col-md-2">
+	<div class="col-md-4">
 		<?php get_sidebar(); ?>
-	</div>
-	<div class="col-md-2">
-		<?php get_sidebar('2');?>
 	</div>
 </div>
 <?php get_footer(); ?>

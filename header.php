@@ -20,19 +20,20 @@
     </head>
     
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top navbar-default">
-            <div class="navbar-header"><a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a><a class="navbar-toggle"
-                data-toggle="collapse" data-target=".navbar-collapse">
-
-            <span class="glyphicon glyphicon-bar"></span>
-
-            <span class="glyphicon glyphicon-bar"></span>
-
-            <span class="glyphicon glyphicon-bar"></span>
-
-          </a>
-            </div>
-            <div class="container">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+        	<div class="container">
+            	<div class="navbar-header">
+            		<a class="navbar-brand" href="<?php echo site_url(); ?>">
+            			<h2 style="margin-top: -15px; margin-bottom: 0px; padding: 0px;"><?php echo get_bloginfo('name'); ?></h2>
+						<?php echo get_bloginfo('description');?>
+            			
+            		</a>
+            		<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+					</a>
+            	</div>
                 <div class="container">
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -43,8 +44,5 @@
                     <!--/.navbar-collapse -->
                 </div>
             </div>
-        </div>
-        <div class="container"></div>
-    </body>
-
-</html>
+        </nav>
+        <div class="container">

@@ -1,4 +1,4 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+<div id="carousel-example-generic" class="carousel slide container" data-ride="carousel" data-interval="2000">
 <!-- Carousel indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -28,16 +28,18 @@
 				}
 		?>
 				<?php if($c ==  1) :?>
-						<div class="item active">
+						<?php echo "<div class=\"item active\" style=\"background-image: url('".$url[0]."'); >"; ?>
 				<?php else : ?>
-						<div class="item">
+						<!--<div class="item">-->
+						<?php echo "<div class=\"item\" style=\"background-image: url('".$url[0]."'); >"; ?>
 				<?php endif; ?>
 				<a href="<?php echo get_permalink();?>"> 	
-					<img src="<?=$url[0]?>" style="margin: auto;">	
-					
+					<!--<img src="<?=$url[0]?>">-->
+					<a href="<?php the_permalink() ?>">
 					<div class="carousel-caption">
-						<h3><?php the_title(); ?></h3>
-					</div>
+        				<h2><?php the_title(); ?></h2>
+      				</div>
+      				</a>	
 				</a>
 
             </div>

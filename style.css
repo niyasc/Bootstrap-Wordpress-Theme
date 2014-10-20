@@ -110,10 +110,18 @@ body {
 	padding: 5px;
 	color: gray;
 }
-.sidebar input[type="text"] {
-  padding: 5px;
-  border: solid 1px #dcdcdc;
-  transition: box-shadow 0.3s, border 0.3s;
+input[type="text"], textarea {
+  border: 1px solid #ccc;
+  width: auto;
+  
+}
+input[type="text"]:hover, textarea:hover {
+	border: 1px solid #bbb;
+} 
+input[type="text"]:focus, textarea:focus {
+	outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 .sidebar input[type="submit"], .sidebar input[type="button"] {
 	.btn btn-default;
@@ -198,10 +206,46 @@ footer {
 	color: white;
 	min-height: 50px;
 }
+/* single post content*/
+.post-content {
+	text-align: auto;
+}
+.post-content img {
+	max-width: 100%;
+	height: auto;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+img {
+	.img-responsive;
+}
+/*comment*/
+label[for="author"] {
+	width: 100%;
+}
+form {
+	width: 50%;
+	width: auto;
+}
+
 /*Responsive behavior*/
 @media(max-width: 480px) {
   h3 {
     font-size: 15pt;
+  }
+  h2 {
+  	font-size: 18pt;
   }
 }
 @media(max-width: 341px) {

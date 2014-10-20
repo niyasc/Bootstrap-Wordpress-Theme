@@ -75,6 +75,9 @@ body {
 .item h3:hover {
 	color: #428BCA;
 }
+.item a img:hover {
+	opacity: 0.8;
+}
 
 /*sidebar*/
 .sidebar {
@@ -118,6 +121,7 @@ body {
 	color: white;
 	padding: 4px;
 }
+/*Social */
 .social-bg {
 	background-color: black;
 	height: 50px;
@@ -126,6 +130,10 @@ body {
 	height: 40px;
 	width: 40px;
 	display: inline;
+	padding: 2px;
+}
+.social-icon-container:hover {
+	padding: 4px;
 }
 .follow-text {
 	float: left;
@@ -161,6 +169,36 @@ body {
 	background-size: contain;
 	float: left;
 }
+/*Navbar modification*/
+.navbar-custom {
+	background-color: black;
+}
+.navbar-brand-custom {
+	color: white;
+}
+.navbar-brand-custom h2{
+	color: white;
+}
+.navbar-brand-custom h2:hover {
+	color: gray;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: gray;
+}
+/*Footer*/
+footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	min-height: 50px;
+}
+/*Responsive behavior*/
 @media(max-width: 480px) {
   h3 {
     font-size: 15pt;
@@ -171,5 +209,18 @@ body {
     padding-top: 120px;
   }
 }
-@media(max-width: 360x) {
+@media(max-width: 360px) {
+  .social-bg {
+  	height: 30px;
+  }
+  .social-icon-container {
+  	height: 25px;
+  	width: 25px;
+  }
+  .follow-text {
+  	font-weight: normal;
+  }
+  footer {
+  	min-height: 20px;
+  }
 }

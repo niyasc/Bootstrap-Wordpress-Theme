@@ -20,10 +20,10 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-fixed-top navbar-inverse">
+        <nav class="navbar navbar-fixed-top navbar-default navbar-custom">
         	<div class="container">
             	<div class="navbar-header">
-            		<a class="navbar-brand" href="<?php echo site_url(); ?>">
+            		<a class="navbar-brand navbar-brand-custom" href="<?php echo site_url(); ?>">
             			<h2 style="margin-top: -15px; margin-bottom: 0px; padding: 0px;"><?php echo get_bloginfo('name'); ?></h2>
 						<?php echo get_bloginfo('description');?>
             			

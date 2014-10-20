@@ -14,12 +14,10 @@ License: GPL
 body {
 	padding-top: 70px;
 	padding-bottom: 40px;
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 div {
-	padding: 3px;
+	padding: 2px;
 }
 a img {
     transition: opacity 0.2s ease 0s;
@@ -52,11 +50,13 @@ body {
 	max-width: 720px;
 	width: 100%;
 }
+/*Featured, Latest, Older*/
 .section-title {
 	background-color: black;
 	color: white;
 	font-weight: bold;
 }
+/*Carousel*/
 .item{
     background: #333;    
     text-align: center;
@@ -64,7 +64,7 @@ body {
     height: 100%;
 }
 .carousel{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .item h3 {
 	background-color: black;
@@ -74,4 +74,102 @@ body {
 }
 .item h3:hover {
 	color: #428BCA;
+}
+
+/*sidebar*/
+.sidebar {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 4px;
+}
+.sidebar h3{
+	background-color: black;
+	color: white;
+	padding: 2px;
+}
+.sidebar ul {
+    display: block;
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    padding: 5px;
+}
+.sidebar li {
+   border: 1px solid #eee;
+   border-radius: 4px;
+   padding: 2px;
+   color: black;
+}
+.sidebar li a {
+	color: black;
+}
+.sidebar li:hover {
+	padding: 5px;
+	color: gray;
+}
+.sidebar input[type="text"] {
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.sidebar input[type="submit"], .sidebar input[type="button"] {
+	.btn btn-default;
+	background-color: black;
+	color: white;
+	padding: 4px;
+}
+.social-bg {
+	background-color: black;
+	height: 50px;
+}
+.social-icon-container {
+	height: 40px;
+	width: 40px;
+	display: inline;
+}
+.follow-text {
+	float: left;
+	color: white;
+	font-weight: bold;
+	height: 100%;
+}
+.facebook-icon {
+	background-image: url("bootstrap/icons/facebook.png");
+	height: inherit;
+	width: inherit;
+	background-size: contain;
+	float: left;
+}
+.googleplus-icon {
+	background-image: url("bootstrap/icons/googleplus.png");
+	height: inherit;
+	width: inherit;
+	background-size: contain;
+	float: left;
+}
+.twitter-icon {
+	background-image: url("bootstrap/icons/twitter.png");
+	height: inherit;
+	width: inherit;
+	background-size: contain;
+	float: left;
+}
+.rss-icon {
+	background-image: url("bootstrap/icons/rss.png");
+	height: inherit;
+	width: inherit;
+	background-size: contain;
+	float: left;
+}
+@media(max-width: 480px) {
+  h3 {
+    font-size: 15pt;
+  }
+}
+@media(max-width: 341px) {
+  body {
+    padding-top: 120px;
+  }
+}
+@media(max-width: 360x) {
 }

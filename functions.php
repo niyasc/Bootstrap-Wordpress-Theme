@@ -13,7 +13,7 @@ if ( function_exists('register_sidebar') ) {
 	register_sidebar( array(
 		'name' => __( 'Sidebar1', 'TechnoRevolution' ),
 		'id' => 'sidebar-1',
-		'before_widget' => '',
+		'before_widget' => "",
 		'after_widget' => "",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',

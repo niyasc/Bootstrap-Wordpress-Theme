@@ -13,7 +13,7 @@
 	<!-- Carousel items -->
 	<div class="carousel-inner">
 		<?php
-		$looped = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 5 ));
+		$looped = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 5, 'category_name' => 'Featured' ));
 		$c = 0;
 		if ( $looped->have_posts() ) {
 			while ( $looped->have_posts() ) {

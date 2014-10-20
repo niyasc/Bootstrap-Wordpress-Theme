@@ -19,13 +19,13 @@ body {
 div {
 	padding: 2px;
 }
-a img {
+/*a img {
     transition: opacity 0.2s ease 0s;
     transition-property: opacity;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
-}
+}*/
 .post-thumbnail {
 	max-height: 170px;
 	max-width: 360px;
@@ -140,8 +140,10 @@ input[type="text"]:focus, textarea:focus {
 	display: inline;
 	padding: 2px;
 }
-.social-icon-container:hover {
-	padding: 4px;
+
+.social-icon-container a {
+	height: inherit;
+	width: inherit;
 }
 .follow-text {
 	float: left;

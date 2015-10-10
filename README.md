@@ -1,9 +1,8 @@
 TechnoRevolution3
 =================
 
-A responsive magazine template using bootstrap 3.x. This templated is designed for the blog http://technorevolution.in, that is why it's name and initial skelton for this theme was developed using tutorial given in blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial
+A responsive, wordpress magazine theme built using bootstrap 3.x API. This theme was inititally guided by tutorial given in blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial
 
-Following are things to remember while using this theme.
-* Comment template is not included, so users are recommended to use any comment plugin like disqus
+Please note following points while using this theme
+* Comment template implementation is not done yet. It is better to use some third party commenting service such as facebook comments, google plus comments or disqus.
 * Featured posts should be added to 'Featured' category for displaying in slide show.
-* Featured image of each post is used for displaying post preview. So users must include a featured image for each post, other wise default image will be used.

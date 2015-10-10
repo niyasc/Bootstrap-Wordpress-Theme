@@ -1,4 +1,4 @@
-TechnoRevolution3
+Bootstrap Wordpress Theme
 =================
 
 A responsive, wordpress magazine theme built using bootstrap 3.x API. This theme was inititally guided by tutorial given in blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial
